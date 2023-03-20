@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <h3>Vuelos con reserva flexible</h3>
+        <p>
+          Encontrá pasajes aéreos con la posibilidad de cambiar las fechas de
+          vuelo.
+        </p>
+      </div>
+      <form action="">
+        <div class="check">
+          <input type="radio" name="travel-condition" />
+          <label class="condicion" for="">Ida y vuelta</label>
+          <input type="radio" name="travel-condition" />
+          <label class="condicion" for="">Solo ida</label>
+          <input type="radio" name="travel-condition" />
+          <label class="condicion" for="">Multidestino</label>
+        </div>
+        <div class="container">
+          <div class="origen">
+            <label for="origen">ORIGEN</label>
+            <input
+              class="inputs"
+              type="text"
+              placeholder="Buenos Aires, Argentina"
+            />
+          </div>
+          <div class="destino">
+            <label for="destino">DESTINO</label>
+            <input
+              class="inputs"
+              type="text"
+              placeholder="Ingresa hacia donde quieres viajar"
+            />
+          </div>
+          <div class="ida">
+            <label for="fechas">FECHAS</label>
+            <input class="input-ida" type="date" placeholder="Ida" />
+          </div>
+          <div class="vuelta">
+            <input class="input-vuelta" type="date" placeholder="Vuelta" />
+          </div>
+          <div class="pasajeros">
+            <label for="pasajeros">PASAJEROS Y CLASES</label>
+            <input
+              class="inputs"
+              type="text"
+              placeholder="1 persona, economico"
+            />
+          </div>
+          <div class="boton">
+            <button>Buscar</button>
+          </div>
+        </div>
+        <div class="nodate">
+          <input type="checkbox" />
+          <label for="">Todavía no he decidido la fecha</label>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
